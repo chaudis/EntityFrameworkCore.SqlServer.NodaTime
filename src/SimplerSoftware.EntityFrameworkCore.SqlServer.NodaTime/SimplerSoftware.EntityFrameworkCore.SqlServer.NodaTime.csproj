@@ -10,10 +10,11 @@
     <Description>Adds native NodaTime support for EntityFrameworkCore.</Description>
     <Copyright>© Simpler Software LLC. All rights reserved.</Copyright>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/StevenRasmussen/EFCore.SqlServer.NodaTime</PackageProjectUrl>
+    <PackageProjectUrl>https://www.learnentityframeworkcore.com/extensions/entityframeworkcore-sqlserver-nodatime</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/StevenRasmussen/EFCore.SqlServer.NodaTime</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Entity Framework Core;entity-framework-core;EF;Data;O/RM;EntityFrameworkCore;EFCore;Noda;NodaTime;Noda Time</PackageTags>
-    <Version>9.1.0</Version>
+    <Version>9.1.1</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
