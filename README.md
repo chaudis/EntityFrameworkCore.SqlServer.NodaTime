@@ -7,6 +7,8 @@ Adds native support to EntityFrameworkCore for SQL Server for the [NodaTime](htt
 
 Read more at [Learn Entity Framework Core](https://www.learnentityframeworkcore.com/extensions/entityframeworkcore-sqlserver-nodatime)
 
+[Version History](https://www.learnentityframeworkcore.com/extensions/entityframeworkcore-sqlserver-nodatime#version-history)
+
 ## Sponsors
 
 [Entity Framework Extensions](https://entityframework-extensions.net/) and [Dapper Plus](https://dapper-plus.net/) are major sponsors and proud to contribute to the development of **EFCore.SqlServer.NodaTime**.
