@@ -57,7 +57,7 @@ namespace Microsoft.EntityFrameworkCore.SqlServer.Query.ExpressionTranslators
                             name: "DATEADD",
                             arguments: new[]
                             {
-                                _sqlExpressionFactory.Fragment(dateAddPart),
+                                new SqlFragmentExpression(dateAddPart),
                                 _sqlExpressionFactory.Convert(arguments[0], typeof(int)),
                                 instance
                             },
@@ -76,7 +76,7 @@ namespace Microsoft.EntityFrameworkCore.SqlServer.Query.ExpressionTranslators
                             name: "DATEADD",
                             arguments: new[]
                             {
-                                _sqlExpressionFactory.Fragment(dateAddExtensionPart),
+                                new SqlFragmentExpression(dateAddExtensionPart),
                                 _sqlExpressionFactory.Convert(arguments[1], typeof(int)),
                                 arguments[0]
                             },
@@ -91,7 +91,7 @@ namespace Microsoft.EntityFrameworkCore.SqlServer.Query.ExpressionTranslators
                             name: "DATEPART",
                             arguments: new[]
                             {
-                                _sqlExpressionFactory.Fragment(datePart),
+                                new SqlFragmentExpression(datePart),
                                 arguments[0]
                             },
                             nullable: false,
@@ -110,7 +110,7 @@ namespace Microsoft.EntityFrameworkCore.SqlServer.Query.ExpressionTranslators
 
                 return _sqlExpressionFactory.Function(
                     name: "DATEDIFF",
-                    arguments: new[] { _sqlExpressionFactory.Fragment(dateDiffDatePart), startDate, endDate },
+                    arguments: new[] { new SqlFragmentExpression(dateDiffDatePart), startDate, endDate },
                     nullable: false,
                     argumentsPropagateNullability: _3argumentsPropagateNullability,
                     returnType: method.ReturnType,
@@ -127,7 +127,7 @@ namespace Microsoft.EntityFrameworkCore.SqlServer.Query.ExpressionTranslators
 
                 return _sqlExpressionFactory.Function(
                     name: "DATEDIFF_BIG",
-                    arguments: new[] { _sqlExpressionFactory.Fragment(dateDiffBigDatePart), startDate, endDate },
+                    arguments: new[] { new SqlFragmentExpression(dateDiffBigDatePart), startDate, endDate },
                     nullable: false,
                     argumentsPropagateNullability: _3argumentsPropagateNullability,
                     returnType: method.ReturnType,
