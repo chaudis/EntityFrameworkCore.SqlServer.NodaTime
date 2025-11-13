@@ -38,7 +38,7 @@ namespace Microsoft.EntityFrameworkCore.SqlServer.Query.ExpressionTranslators
                 {
                     return _sqlExpressionFactory.Function(
                         "DATEPART",
-                        new[] { _sqlExpressionFactory.Fragment(datePart), instance },
+                        new[] { new SqlFragmentExpression(datePart), instance },
                         false,
                         _argumentsPropagateNullability,
                         returnType);
